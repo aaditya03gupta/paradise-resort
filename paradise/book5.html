@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+            integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+            crossorigin="anonymous">
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="styles.css">
+
+        <title>Paradise</title>
+        <style>
+        body {
+          font-family: Arial;
+          font-size: 17px;
+          padding: 8px;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        .row {
+          display: -ms-flexbox; /* IE10 */
+          display: flex;
+          -ms-flex-wrap: wrap; /* IE10 */
+          flex-wrap: wrap;
+          margin: 0 -16px;
+        }
+        
+        .col-25 {
+          -ms-flex: 25%; /* IE10 */
+          flex: 25%;
+        }
+        
+        .col-50 {
+          -ms-flex: 50%; /* IE10 */
+          flex: 50%;
+        }
+        
+        .col-75 {
+          -ms-flex: 75%; /* IE10 */
+          flex: 75%;
+        }
+        
+        .col-25,
+        .col-50,
+        .col-75 {
+          padding: 0 16px;
+        }
+        
+        .container {
+          background-color: #f2f2f2;
+          padding: 5px 20px 15px 20px;
+          border: 1px solid lightgrey;
+          border-radius: 3px;
+        }
+        
+        input[type=text] {
+          width: 100%;
+          margin-bottom: 20px;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+        }
+        
+        label {
+          margin-bottom: 10px;
+          display: block;
+        }
+        
+        .icon-container {
+          margin-bottom: 20px;
+          padding: 7px 0;
+          font-size: 24px;
+        }
+        
+        .btn {
+          background-color: #04AA6D;
+          color: white;
+          padding: 12px;
+          margin: 10px 0;
+          border: none;
+          width: 100%;
+          border-radius: 3px;
+          cursor: pointer;
+          font-size: 17px;
+        }
+        
+        .btn:hover {
+          background-color: #45a049;
+        }
+        
+        a {
+          color: #2196F3;
+        }
+        
+        hr {
+          border: 1px solid lightgrey;
+        }
+        
+        span.price {
+          float: right;
+          color: grey;
+        }
+        
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+        @media (max-width: 800px) {
+          .row {
+            flex-direction: column-reverse;
+          }
+          .col-25 {
+            margin-bottom: 20px;
+          }
+        }
+        </style>
+        <div id="navbar" style="margin: 0px -15px;">
+            <img src="logo.png" alt="" style="width: 30px; height:30px;">
+            <a href="#default" id="logo">Paradise Resort</a>
+            <div id="navbar-right">
+                <a class href="index.html" id="home">Home</a>
+                <a class href="#book" id="home">Book Now</a>
+                
+            </div>
+        </div>
+    </head>
+
+    <script>
+        // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+          document.getElementById("navbar").style.padding = "0px 0px";
+          document.getElementById("logo").style.fontSize = "0px";
+          document.getElementById("home").style.fontSize = "0px";
+          document.getElementById("about").style.fontSize = "0px";
+          document.getElementById("gallery").style.fontSize = "0px";
+          document.getElementById("services").style.fontSize = "0px";
+          document.getElementById("contact").style.fontSize = "0px";
+      
+        } else {
+          document.getElementById("navbar").style.padding = "20px 10px";
+          document.getElementById("logo").style.fontSize = "30px";
+          document.getElementById("home").style.fontSize = "20px";
+          document.getElementById("about").style.fontSize = "20px";
+          document.getElementById("gallery").style.fontSize = "20px";
+          document.getElementById("services").style.fontSize = "20px";
+          document.getElementById("contact").style.fontSize = "20px";
+        }
+      }
+      
+      </script>
+    <body style="margin: 0px 5px;">
+
+        <div class="details" style="width: 1478px;">
+            <div class="row">
+                <div class="paradise">
+                    <h1 style="opacity: 0.1;font-size:294px; margin:0px 56px;">PARADISE</h1>
+                </div>
+                <div class="col" style="margin:-396px 0px;">
+                    <div class="product-details"
+                        style="margin: 22px 8px;margin-top:25px;">
+                        <div class="text"
+                            style="text-align: center; margin-top:10px;">
+                            <h1>.......</h1>
+                        </div>
+                        <div class="para"
+                            style="margin: 34px 591px;width:311px;">
+                            <h1>Featured Facility</h1>
+                            <ul style="font-size: 20px; padding:5px 23px 27px;">
+                                <li style="padding: 6px 2px;">A/c, Safe locker,
+                                    City view</li>
+                                <li style="padding: 6px 2px;">24 Hrs room
+                                    service</li>
+                                <li style="padding: 6px 2px;">24 Hrs hot water</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="hotel" style="width:336px; margin:-283px 141px;">
+                    <div class="head-1">
+                        <h1>DELUX ROOM</h1>
+                    </div>
+
+                    <div class="under-para-1">
+                        <p>They are available in Single Deluxe and Double Deluxe variants. Deluxe room is well furnished. Some amenities are attached bathroom, a dressing table, a bedside table, a small writing table, a TV, and a small fridge. The floor is covered with carpet and most suitable for small families.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="description" style="width: 336px; margin:-282px 1037px;">
+            <div class="head">
+                <h1>FIVE STAR</h1>
+            </div>
+            <div class="under-para">
+                <p>This Resort would be large and luxurious, which offers the
+                    highest degree of room and personal service. It is built
+                    with beautiful architecture, and is managed keeping elegance
+                    and style in mind.</p>
+            </div>
+        </div>
+
+        <div class="container-fluid " style="margin: 347px 0px;">
+            <div class="section-cols">
+                <div class="row my-4">
+                    <div class="col-md-3">
+                        <img src="deluxroom1.jpg" alt
+                            style="width: 350px;height:200px;border:6px solid red;">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="deluxroom2.jpg" alt
+                            style="width: 350px;height:200px;border:6px solid red;">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="deluxroom3.webp" alt
+                            style="width: 350px;height:200px;border:6px solid red;">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="deluxroom4.webp" alt
+                            style="width: 350px;height:200px;border:6px solid red;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr style="margin: -317px 0px;">
+
+        <div class="bottom" id="book"
+            style="margin: 340px -13px;width:1515px; background-image:url('wall.avif');height:851px;background-repeat:no-repeat;background-size:cover;">
+            <div class="text-1"
+                style="text-align: center; color:white;height:120px">
+                <h1 style="padding: 43px 0px 0px;">BOOK NOW</h1>
+            </div>
+            <div class="row" style="margin: 4px 69px;width: 1417px;">
+                <div class="col-75">
+                    <div class="container">
+                        <form action="/action_page.php">
+
+                            <div class="row">
+                                <div class="col-50">
+                                    <h3>Billing Address</h3>
+                                    <label for="fname"><i class="fa fa-user"></i>
+                                        Full Name</label>
+                                    <input type="text" id="fname"
+                                        name="firstname"
+                                        placeholder="John M. Doe">
+                                    <label for="email"><i class="fa fa-envelope"></i>
+                                        Email</label>
+                                    <input type="text" id="email" name="email"
+                                        placeholder="john@example.com">
+                                    <label for="adr"><i
+                                            class="fa fa-address-card-o"></i>
+                                        Address</label>
+                                    <input type="text" id="adr" name="address"
+                                        placeholder="542 W. 15th Street">
+                                    <label for="city"><i
+                                            class="fa fa-institution"></i>
+                                        Phone no</label>
+                                    <input type="text" id="phone" name="phone"
+                                        placeholder="+91">
+
+                                    <div class="row">
+                                        <div class="col-50">
+                                            <label for="state">State</label>
+                                            <input type="text" id="state"
+                                                name="state" placeholder="NY">
+                                        </div>
+                                        <div class="col-50">
+                                            <label for="zip">city</label>
+                                            <input type="text" id="city"
+                                                name="city"
+                                                placeholder="New York">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-50">
+                                    <h3>Payment</h3>
+                                    <label for="fname">Accepted Cards</label>
+                                    <div class="icon-container">
+                                        <i class="fa fa-cc-visa"
+                                            style="color:navy;"></i>
+                                        <i class="fa fa-cc-amex"
+                                            style="color:blue;"></i>
+                                        <i class="fa fa-cc-mastercard"
+                                            style="color:red;"></i>
+                                        <i class="fa fa-cc-discover"
+                                            style="color:orange;"></i>
+                                    </div>
+                                    <label for="cname">Name on Card</label>
+                                    <input type="text" id="cname"
+                                        name="cardname"
+                                        placeholder="John More Doe">
+                                    <label for="ccnum">Credit card number</label>
+                                    <input type="text" id="ccnum"
+                                        name="cardnumber"
+                                        placeholder="1111-2222-3333-4444">
+                                    <label for="expmonth">Exp Month</label>
+                                    <input type="text" id="expmonth"
+                                        name="expmonth"
+                                        placeholder="September">
+                                    <div class="row">
+                                        <div class="col-50">
+                                            <label for="expyear">Exp Year</label>
+                                            <input type="text" id="expyear"
+                                                name="expyear"
+                                                placeholder="2018">
+                                        </div>
+                                        <div class="col-50">
+                                            <label for="cvv">CVV</label>
+                                            <input type="text" id="cvv"
+                                                name="cvv"
+                                                placeholder="352">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <label>
+                                <input type="checkbox" checked="checked"
+                                    name="sameadr"> Shipping address same as
+                                billing
+                            </label>
+                            <input type="submit" value="Continue to checkout"
+                                class="btn">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="container">
+                        <h4>ROOMS<span class="price" style="color:black"><i
+                                    class="fa fa-shopping-cart"></i> <b>1</b></span></h4>
+                        <p><a href="#">DELUX ROOM</a> <span class="price">₹2900</span></p>
+                        <p>TAX<span class="price">₹100</span></p>
+                        <hr>
+                        <p>Total <span class="price" style="color:black"><b>₹3000</b></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    <footer class="py-7 py-md-9 " style="height: 315px;background:black;margin: -337px -12px;width:1503">
+      <div class="container px-7" style="background: black;">
+          <div class="row gx-7" style="height: 0px;">
+              <div class="col-sm-4" style="height:0px">
+                  
+                  <h5 class="text-xs text-warning" style="margin:110px 5px">ABOUT US</h5>
+                  <p class="mb-6" style="margin:-84px 0px;color:#a99e9e;width:330px;line-height:1.8;letter-spacing:0.8px;">Vacations are the only things you can buy that make you richer.</p>
+              </div>
+
+              <div class="col sm-4" style="margin: 110px 80px;">
+                  <h5 class="text-xs text-warning" style="padding: 9px;">CONTACT INFO</h5>
+                  <ul class="list-unstyled mb-2">
+                      <li class="d-flex mb-2">
+                          <i class="fa-solid fa-phone" style="color:#a99e9e; padding:9px;">+91 8269773533</i>
+                      </li>
+
+                      <li class="d-flex">
+                          <i class="fa-solid fa-envelope" style="margin: 7px; color:#a99e9e"></i>
+                          <a href="mailto:aadityakumargupta03@gmail.com" style="color: #f5a637;text-decoration-line:revert;">aadityakumargupta03@gmail.com</a>
+                      </li>
+                  </ul>
+              </div>
+
+              <div class="col sm-4" style="margin: 115px 18px;">
+                  <h5 class="text-xs text-warning">SOCIAL LINK</h5>
+                  <div class="row gx-76">
+                      <a class="d-block me-3" href="https://www.instagram.com/aaditya03gupta/">
+                          <i class="fa-brands fa-instagram" style="padding: 5px 32px 0px;color:#a99e9e"></i>
+                      </a>
+
+                      <a class="d-block me-3" href="https://github.com/aaditya03gupta/aaditya03gupta">
+                          <i class="fa-brands fa-github" style="padding: 0px -1px 0px;color:#a99e9e"></i>
+                      </a>
+
+                  </div>
+              </div>
+
+          </div>
+
+          <div class="row" style="margin: 140px -22px; color:#a99e9e;">
+              <div class="col" style="height: 10px;">
+                  <div class="d-flex align-items-center" style="height: 10px; margin:137px 437px;">
+                      <hr class="hr-sm me-3" style="background:#a99e9e; padding:0px 22px 0px; margin:8px;">
+                      ©2023 ParadiseResort
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+            crossorigin="anonymous"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+    </body>
+</html>
